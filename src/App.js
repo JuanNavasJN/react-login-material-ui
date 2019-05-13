@@ -1,12 +1,12 @@
 import React from "react";
 import { createStore, combineReducers } from "redux";
 import { Provider } from "react-redux";
-import state from "././reducers/state";
+import main from "././reducers/main";
 import Router from "./routes/Router";
 import "./css/index.css";
 
 const reducer = combineReducers({
-    state
+    main
 });
 
 const store = createStore(reducer);
